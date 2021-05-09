@@ -1,0 +1,3 @@
+local_src.egg-info/*
+venv/*
+.idea/*

@@ -61,7 +61,7 @@ def init_config():
 
 
 if __name__ == '__main__':
-    schedule.every().hour.do(init_config)
+    schedule.every(15).minutes.do(init_config)
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(20)

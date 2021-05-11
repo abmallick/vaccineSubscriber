@@ -12,3 +12,5 @@ Step 2 & 3 will initialize the db
 
 Step 5 to 7 are needed to send emails once the vaccine is available
 
+
+This will fetch vaccine details every 15mins

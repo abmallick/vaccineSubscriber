@@ -2,7 +2,7 @@
 2. go to utilities/initialize_db.py and add the pincodes and email ids
 
 3. cd src/
-4. run: python3 utilities/initialize_db.py
+4. run: python3 utilities/initialize_db.py (your pwd should be at src/)
 
 Step 2 & 3 will initialize the db
 

@@ -8,12 +8,10 @@ with open('utilities/request_schema.sql') as f:
 
 cur = connection.cursor()
 
-cur.execute("INSERT INTO requests (pin_code, email_id) VALUES (?, ?)",
-            ('160104', 'rdxvvvvv@gmail.com')
-            )
-cur.execute("INSERT INTO requests (pin_code, email_id) VALUES (?, ?)",
-            ('160104', 'utkarsh.sahay13@gmail.com')
-            )
+cur.executemany("INSERT INTO requests (pin_code, email_id) VALUES (?,?)",
+                [(160104, 'abc@gmail.com'),
+                 (800014, 'xyz@gmail.com')]
+                )
 
 connection.commit()
 connection.close()
